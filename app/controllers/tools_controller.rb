@@ -1,4 +1,5 @@
 class ToolsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :destroy, :edit, :update], notice: 'you must sign in first!'
   before_action :set_tool, only: [:show, :edit, :update, :destroy]
 
   # GET /tools
@@ -71,4 +72,5 @@ class ToolsController < ApplicationController
     def tool_params
       params.require(:tool).permit(:name, :description)
     end
+
 end
