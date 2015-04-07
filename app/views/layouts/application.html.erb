@@ -11,6 +11,36 @@
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navtainer" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand">Toolmash</a>
+    </div>
+   
+    <div class="navbar-container-right">
+      
+      <ul class="nav nav-pills navbar-right">
+
+        <li>
+          <%= link_to 'Home', '#home' %>
+        </li>
+        <li>
+          <%= link_to 'About', '#about' %>
+        </li>
+        <li>
+          <%= link_to 'Services', '#services' %>
+        </li>
+        <li>
+          <%= link_to 'Contact', '#contact' %>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
+
 <%= yield %>
 
 </body>
