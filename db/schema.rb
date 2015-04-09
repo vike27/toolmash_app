@@ -11,13 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150403122626) do
+ActiveRecord::Schema.define(version: 20150409170949) do
 
   create_table "tools", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.string   "tool_image_file_name"
+    t.string   "tool_image_content_type"
+    t.integer  "tool_image_file_size"
+    t.datetime "tool_image_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

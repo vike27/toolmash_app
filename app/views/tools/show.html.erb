@@ -10,5 +10,11 @@
   <%= @tool.description %>
 </p>
 
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @tool.tool_image.url(:medium) %>
+</p>
+
+
 <%= link_to 'Edit', edit_tool_path(@tool) %> |
 <%= link_to 'Back', tools_path %>
